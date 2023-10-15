@@ -1,17 +1,17 @@
 {
-  "name": "factorio-lua-api-autocomplete",
-  "displayName": "Factorio Lua API autocomplete",
-  "description": "Autocompletion for the Factorio Lua API",
-  "version": "0.7.0",
-  "publisher": "svizzini",
+  "name": "factorio-lua-api-autocomplete-updated",
+  "displayName": "Factorio Lua API autocomplete updated",
+  "description": "Autocompletion for the Factorio Lua API. This is an updated fork from simon svizzini.",
+  "version": "0.8.0",
+  "publisher": "dfb159",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simonvizzini/vscode-factorio-lua-api-autocomplete.git"
+    "url": "https://github.com/dfb159/vscode-factorio-lua-api-autocomplete.git"
   },
   "private": true,
   "license": "MIT",
   "engines": {
-    "vscode": "^1.20.0"
+    "vscode": "^1.83.1"
   },
   "categories": [
     "Other",
@@ -35,6 +35,7 @@
     ]
   },
   "scripts": {
+    "scrape": "ts-node ./scraper/index.ts",
     "vscode:prepublish": "tsc -p ./",
     "compile": "tsc -watch -p ./",
     "postinstall": "node ./node_modules/vscode/bin/install",
@@ -44,14 +45,17 @@
     "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.134",
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^12.0.7",
-    "html-to-text": "^5.1.1",
-    "mocha": "^6.1.4",
-    "osmosis": "^1.1.10",
-    "ts-node": "^8.2.0",
-    "typescript": "^3.5.1",
+    "@types/html-to-text": "^9.0.2",
+    "@types/jsdom": "^21.1.3",
+    "@types/lodash": "^4.14.199",
+    "@types/mocha": "^10.0.2",
+    "@types/node": "^18.18.2",
+    "axios": "^1.5.1",
+    "html-to-text": "^9.0.5",
+    "jsdom": "^22.1.0",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
     "vscode": "^1.1.34"
   }
 }
