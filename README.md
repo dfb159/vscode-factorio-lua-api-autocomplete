@@ -18,7 +18,7 @@ After this install the necessary modules with `npm install`.
 
 ## Update data
 
-Run the scrapper to pull the latest data from the Factorio API documentation: `npx ts-node scraper/index.ts`
+Run the scrapper to pull the latest data from the Factorio API documentation: `npx ts-node scraper/index.ts` or `npm run scrape`
 
 ## Todo
 
